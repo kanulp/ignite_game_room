@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:ignite_game_room/src/home/home_page.dart';
 
 class SplashPage extends StatefulWidget {
   SplashPage({Key key}) : super(key: key);
@@ -29,6 +30,6 @@ void initState() {
   );
   }
   void navigationPage() {
-  Navigator.of(context).pushReplacementNamed('/HomeScreen');
+  Navigator.of(context).push(MaterialPageRoute(builder: (context)=>HomePage()));
   }
 }

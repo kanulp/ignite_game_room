@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:ignite_game_room/src/home/home_page.dart';
-import 'package:ignite_game_room/src/splash/splash_page.dart';
 
 class App extends StatelessWidget {
   // This widget is the root of your application.
@@ -11,10 +10,7 @@ class App extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: SplashPage(),
-      routes: <String, WidgetBuilder>{
-      '/HomeScreen': (BuildContext context) =>  HomePage()
-    },
+      home: HomePage(),
     );
   }
 }
